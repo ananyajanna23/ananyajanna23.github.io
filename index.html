@@ -50,6 +50,12 @@
             color: #3a3a3a;
             text-decoration: none;
         }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 16px;
+            }
+        }
 
         nav ul {
             display: flex;
@@ -99,7 +105,8 @@
 
         /* Hero Section */
         .hero {
-            padding: 140px 0 80px;
+            padding: 100px 0 80px;
+            margin-top: 80px;
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 60px;
@@ -546,8 +553,23 @@
         @media (max-width: 768px) {
             nav {
                 padding: 12px 20px;
-                flex-direction: column;
+                flex-direction: row;
                 gap: 12px;
+                justify-content: space-between;
+            }
+            
+            nav ul {
+                display: none;
+            }
+            
+            .cta-nav {
+                padding: 10px 20px;
+                font-size: 13px;
+            }
+            
+            .hero {
+                margin-top: 60px;
+                padding: 60px 0 60px;
             }
             
 
